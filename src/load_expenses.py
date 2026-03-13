@@ -8,5 +8,7 @@ print(df.head())
 print("\nColumns:")
 print(df.columns)
 
+
 print("\nTotal Spending:")
 print(df["amount"].sum())
+
