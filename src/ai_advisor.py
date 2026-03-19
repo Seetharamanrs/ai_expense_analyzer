@@ -18,12 +18,13 @@ GROUP BY category
 
 df=pd.read_sql(query,conn)
 
+
 conn.close()
 
 data_summary=df.to_string(index=False)
 
 print("Expenses Summary\n", data_summary)
-
+    
 response=client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
