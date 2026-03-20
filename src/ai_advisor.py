@@ -29,7 +29,7 @@ response=client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
         {"role":"system","content":"You are a financial advisor. "},
-        {"role":"user","content":f"Here is my spending:\n {data_summary}\nGive me simple financial advice."}
+        {"role":"user","content":f"Here is my spending:\n {data_summary}\n Give 3 short actionable financial tips in bullet points."}
     ]
 )
 
