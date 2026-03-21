@@ -18,7 +18,6 @@ GROUP BY category
 
 df=pd.read_sql(query,conn)
 
-
 conn.close()
 
 data_summary=df.to_string(index=False)
