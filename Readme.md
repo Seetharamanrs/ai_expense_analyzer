@@ -10,6 +10,7 @@ A command-line application that analyzes expense data using Python, SQLite, and 
 - Category-wise expense breakdown
 - Generate AI-based financial advice
 
+
 ## Tech Stack 
 - Python Stack 
 - SQLite
