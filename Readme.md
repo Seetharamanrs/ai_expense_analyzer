@@ -25,6 +25,7 @@ A command-line application that analyzes expense data using Python, SQLite, and 
 - Structuring a multi-file Python project
 
 
+
 ## How to Run 
 ```  python db_connection.py ``` 
 
