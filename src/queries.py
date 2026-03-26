@@ -16,8 +16,6 @@ SELECT category, SUM(amount) as total
 FROM expenses
 GROUP BY category
 """
-
-
 category_spend=pd.read_sql(query2,conn)
 
 print("\n Spending by Category")
