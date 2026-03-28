@@ -11,6 +11,7 @@ print(total)
 
 
 
+
 query2 = """
 SELECT category, SUM(amount) as total
 FROM expenses
