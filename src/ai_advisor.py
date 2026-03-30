@@ -7,32 +7,28 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-conn= sqlite3.connect("../expenses.db")
-
-query="""
-SELECT category, SUM(amount) as total
-FROM expenses
-GROUP BY category
-"""
-
-df=pd.read_sql(query,conn)
+def get_financial_advice(summary):
+    return get_response(summary, "Give 3 short actionable financial tips.")
 
 
-conn.close()
+def get_overspending_advice(summary):
+    return get_response(summary, "Which category has overspending? Explain briefly.")
 
-data_summary=df.to_string(index=False)
 
-print("Expenses Summary\n", data_summary)
+def get_budget_suggestion(summary):
+    return get_response(summary, "Suggest a simple monthly budget based on this spending.")
+
+
+def get_response(data_summary,instruction):
     
-response=client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {"role":"system","content":"You are a financial advisor. "},
-        {"role":"user","content":f"Here is my spending:\n {data_summary}\n Give 3 short actionable financial tips in bullet points."}
-    ]
-)
+    response=client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role":"system","content":"You are a financial advisor. "},
+            {"role":"user","content":f"Here is my spending:\n {data_summary}\n{instruction}"}
+        ]
+    )
 
-print("\nAI Advice:\n")
-print(response.choices[0].message.content)
+    return response.choices[0].message.content
+
 
