@@ -18,7 +18,6 @@ def get_overspending_advice(summary):
 def get_budget_suggestion(summary):
     return get_response(summary, "Suggest a simple monthly budget based on this spending.")
 
-
 def get_response(data_summary,instruction):
     
     response=client.chat.completions.create(
