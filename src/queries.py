@@ -1,28 +1,23 @@
 import sqlite3
 import pandas as pd 
 
-conn= sqlite3.connect("../expenses.db")
 
-query1="SELECT SUM(amount) as total_spending FROM expenses"
-total=pd.read_sql(query1,conn)
+def total_spending():
+    conn= sqlite3.connect("../expenses.db")
+    query="SELECT SUM(amount) as total_spending FROM expenses"
+    total=pd.read_sql(query,conn)
+    conn.close()
+    return total
 
-print("Total Spending")
-print(total)
-
-
-
-
-query2 = """
-SELECT category, SUM(amount) as total
-FROM expenses
-GROUP BY category
-"""
-
-
-category_spend=pd.read_sql(query2,conn)
-
-print("\n Spending by Category")
-print(category_spend)
-conn.close()
+def total_spending():
+    conn= sqlite3.connect("../expenses.db")
+    query2 = """
+    SELECT category, SUM(amount) as total
+    FROM expenses
+    GROUP BY category
+    """
+    category_spend=pd.read_sql(query2,conn)
+    conn.close()
+    return category_spend
 
 
