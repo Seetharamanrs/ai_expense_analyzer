@@ -9,7 +9,7 @@ def total_spending():
     conn.close()
     return total
 
-def total_spending():
+def get_category_spending():
     conn= sqlite3.connect("../expenses.db")
     query2 = """
     SELECT category, SUM(amount) as total
@@ -20,4 +20,21 @@ def total_spending():
     conn.close()
     return category_spend
 
+def get_highest_expense_category():
+    import sqlite3
+    import pandas as pd
 
+    conn = sqlite3.connect("../expenses.db")
+
+    query = """
+    SELECT category, SUM(amount) as total
+    FROM expenses
+    GROUP BY category
+    ORDER BY total DESC
+    LIMIT 1
+    """
+
+    df = pd.read_sql(query, conn)
+    conn.close()
+
+    return df
