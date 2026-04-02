@@ -38,3 +38,23 @@ def get_highest_expense_category():
     conn.close()
 
     return df
+def get_monthly_trend():
+    import sqlite3
+    import pandas as pd
+
+    conn = sqlite3.connect("../expenses.db")
+
+    query = """
+    SELECT 
+        strftime('%Y-%m', date) AS month,
+        category,
+        SUM(amount) AS total
+    FROM expenses
+    GROUP BY month, category
+    ORDER BY month
+    """
+
+    df = pd.read_sql(query, conn)
+    conn.close()
+
+    return df
