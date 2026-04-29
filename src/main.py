@@ -14,7 +14,7 @@ from database_setup import load_csv_to_db
 def main():
     load_csv_to_db()
     while True:
-        print("\n 1. Total Spending.")
+        print("1. Total Spending.")
         print("2. Category Breakdown")
         print("3. Highest Expense")
         print("4. Monthly Trend")
