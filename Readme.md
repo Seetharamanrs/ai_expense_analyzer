@@ -9,17 +9,20 @@ A command-line application that analyzes expense data using Python, SQLite, and 
 - Analyse spending using SQL queries
 - Category-wise expense breakdown
 - Generate AI-based financial advice
+- Expose functionality via REST API endpoints
 ## Tech Stack 
 - Python Stack 
 - SQLite
 - Pandas
 - OpenAI API
+- Flask (REST API)
 
 ## What I learned
 - Buliding a data pipeline (CSV-> pandas -> SQLite)
 - Writing SQL queries (SELECT, GROUP BY, SUM)
 - Integrating AI APIs into real applications 
 - Working with environment variables securely 
+- Developed REST APIs using Flask
 - Structuring a multi-file Python project
 
 
