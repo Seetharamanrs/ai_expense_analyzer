@@ -1,6 +1,6 @@
 # Ai_expense_analyzer
 
-A command-line application that analyzes expense data using Python, SQLite, and AI to generate financial insights.
+A Python-based application that analyzes expense data using SQLite and AI to generate financial insights and spending trends. The project supports both CLI interaction and REST API access.
 
 
 ## Features

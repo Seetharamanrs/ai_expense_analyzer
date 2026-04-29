@@ -1,11 +1,67 @@
 date,description,category,amount
+2026-01-01,New Year Party,Entertainment,2500
+2026-01-01,Uber,Travel,350
+2026-01-02,Groceries,Food,1450
+2026-01-02,Milk & Bread,Food,120
+2026-01-03,Zomato,Food,580
+2026-01-04,Petrol,Transport,2000
+2026-01-05,Electricity Bill,Bills,1850
+2026-01-05,Mobile Recharge,Bills,499
+2026-01-06,Amazon Shopping,Shopping,1200
+2026-01-07,Gym Membership,Health,1500
+2026-01-08,Bus Ticket,Travel,80
+2026-01-09,Fruit Vendor,Food,200
+2026-01-10,Netflix,Entertainment,499
+2026-01-11,Restaurant Dinner,Food,1100
+2026-01-12,Water Bill,Bills,300
+2026-01-13,Laundry,Personal,250
+2026-01-14,Vegetables,Food,450
+2026-01-15,Uber,Travel,280
+2026-01-16,Movie Tickets,Entertainment,700
+2026-01-17,Medicine,Health,650
+2026-01-18,Petrol,Transport,1500
+2026-01-19,WiFi Bill,Bills,799
+2026-01-20,Groceries,Food,900
+2026-01-21,Swiggy,Food,320
+2026-01-22,Tea & Snacks,Food,150
+2026-01-23,Haircut,Personal,350
+2026-01-24,Amazon,Shopping,550
+2026-01-25,Uber,Travel,210
+2026-01-26,Republic Day Brunch,Food,850
+2026-01-27,Milk & Bread,Food,110
+2026-01-28,Gas Cylinder,Bills,1050
+2026-01-29,Zomato,Food,420
+2026-01-30,Stationery,Shopping,200
+2026-01-31,Coffee,Food,180
+2026-02-01,Rent,Bills,15000
+2026-02-01,Milk & Bread,Food,120
+2026-02-02,Groceries,Food,1800
+2026-02-02,Uber,Travel,310
+2026-02-03,Petrol,Transport,1800
+2026-02-04,Mobile Recharge,Bills,499
+2026-02-05,Electricity Bill,Bills,2100
+2026-02-06,Gym Membership,Health,1500
+2026-02-07,Dinner with Friends,Food,1400
+2026-02-08,Bus Ticket,Travel,120
+2026-02-09,Fruit Vendor,Food,300
+2026-02-10,Netflix,Entertainment,499
+2026-02-11,Amazon,Shopping,2500
+2026-02-12,Medicine,Health,400
+2026-02-13,Uber,Travel,250
+2026-02-14,Valentine's Dinner,Food,3200
+2026-02-15,Flowers,Shopping,500
+2026-02-16,Vegetables,Food,600
+2026-02-17,Milk & Bread,Food,115
+2026-02-18,Petrol,Transport,1500
+2026-02-19,WiFi Bill,Bills,799
+2026-02-20,Zomato,Food,650
+2026-02-21,Weekend Trip Fuel,Transport,2500
+2026-02-22,Hotel Stay,Travel,4500
+2026-02-23,Groceries,Food,1200
+2026-02-24,Uber,Travel,180
+2026-02-25,Swiggy,Food,390
+2026-02-26,House Cleaning,Personal,800
+2026-02-27,Milk & Bread,Food,120
+2026-02-28,Movie & Popcorn,Entertainment,950
+2026-03-01,Rent,Bills,15000
 2026-03-01,Swiggy,Food,450
-2026-03-02,Uber,Travel,220
-2026-03-03,Groceries,Food,1200
-2026-03-04,Netflix,Entertainment,499
-2026-03-05,Petrol,Transport,1500
-2026-03-06,Amazon,Shopping,899
-2026-03-07,Restaurant,Food,750
-2026-03-08,Bus Ticket,Travel,120
-2026-03-09,Electricity Bill,Bills,2100
-2026-03-10,Mobile Recharge,Bills,399
